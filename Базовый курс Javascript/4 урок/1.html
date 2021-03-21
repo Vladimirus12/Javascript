@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ДЗ 3</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    function getDigitsOfNumber(num) {
+        if (!Number.isInteger(num) && num < 0 && num > 999) {
+            console.log('целое число в диапазоне [0..999]');
+            return {};
+        }
+
+        const object = {};
+
+        object.firstDigit = num % 10;
+        object.secondDigit = Math.floor(num / 10) % 10;
+        object.thirdDigit = Math.floor(num / 100) % 10;
+
+        return object;
+    }
+
+    console.log(getDigitsOfNumber(345));
+</script>
+</body>
+</html>
