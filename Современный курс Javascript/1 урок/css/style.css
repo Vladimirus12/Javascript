@@ -1,0 +1,34 @@
+.products-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desc{
+    padding: 15px;
+    border: 1px solid #c0c0c040;
+}
+
+p{
+    margin: 0 0 5px 0;
+}
+
+.products-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.products-item:hover,
+.products-item:hover,
+.products-item:hover {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.16);
+}
+
+.products-item:hover img,
+.products-item:hover img,
+.products-item:hover img {
+    filter: brightness(50%);
+}
