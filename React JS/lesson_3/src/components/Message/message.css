@@ -1,0 +1,21 @@
+.Message {}
+
+.Message-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.Message-text {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.Message-chat {
+
+}
+
+.Message-form {
+    display: flex;
+    flex-direction: column;
+}
