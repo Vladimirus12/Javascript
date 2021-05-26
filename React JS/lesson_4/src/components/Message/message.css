@@ -1,11 +1,13 @@
 .Message {
-    border-radius: 10px;
+    min-height: 500px;
+    width: 100%;
+    margin: 0;
+    border-radius: 3px;
     background-color: rgba(0,0,0 .2);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255,255,255,0.5);
-
-    display: flex;
-    flex-direction: column;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 .Message-title {
@@ -13,12 +15,12 @@
     font-size: 23px;
     font-weight: 600;
     text-transform: capitalize;
-    min-width: 93%;
+    min-width: 95%;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 3px;
     display: flex;
     justify-content: center;
-    margin: 20px 28px 0 28px;
+    margin: 20px 0 0 0;
     background-color: #2ca5e0;
     padding: 10px;
     -webkit-appearance: none;
@@ -27,7 +29,6 @@
     outline: none;
     height: 20px;
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-    box-shadow: inset 1px 1px 5px 0 rgb(146 148 248 / 40%), 1px 1px 25px 10px rgb(146 148 248 / 40%);
     transition: all 0.2s ease;
     color: #606060;
     text-shadow: 0 1px #fff;
@@ -43,7 +44,7 @@
     display: flex;
     flex-direction: column;
 
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     min-width: 100%;
 }
@@ -103,7 +104,7 @@
 
 
 
-.Message-chat {
+/*.Message-chat {
     min-height: 500px;
     display: flex;
     justify-content: space-between;
@@ -115,10 +116,11 @@
     position: relative;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 3px;
-}
+}*/
 
 .Message-chat-dialog {
     overflow: scroll;
+    height: 425px;
 }
 
 .Message-chat-dialog::-webkit-scrollbar {
@@ -139,30 +141,30 @@ textarea {
     border-radius: 3px;
     margin: 0;*/
 
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
     min-width: 20%;
     border: 1px solid rgba(255,255,255,0.5);
     border-radius: 3px;
-    margin: 0;
     background-color: #2ca5e0;
     padding: 10px;
     -webkit-appearance: none;
     -webkit-user-select: none;
     outline: none;
-    height: 100%;
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-    box-shadow: inset 1px 1px 5px 0 rgb(146 148 248 / 40%), 1px 1px 25px 10px rgb(146 148 248 / 40%);
     transition: all 0.2s ease;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #606060;
-    text-shadow: 0 1px #fff;
     position: relative;
     overflow: hidden;
+    font-family: "Source Sans Pro", sans-serif;
+    text-shadow: 0 1px #fff;
+
+    font-size: 20px;
+    font-weight: 600;
+    list-style-type: none;
 }
 
-
-
-
-
-
+.Message-chat-list a {
+    color: #606060;
+    text-decoration: none;
+}

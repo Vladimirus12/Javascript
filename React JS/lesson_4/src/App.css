@@ -110,6 +110,45 @@
 
 
 
+.Route {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.chatList {
+  min-height: 100%;
+  width: 246px;
+  margin: 0;
+  background-color: #2ca5e0;
+  padding: 10px;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 3px;
+  border: 1px solid #7d7d82;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  text-shadow: 0 1px #fff;
+  list-style-type: none;
+}
+
+.chatList a {
+  color: #606060;
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 
 

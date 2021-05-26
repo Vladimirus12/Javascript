@@ -1,7 +1,9 @@
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import React from 'react';
-import ChatList from "./components/ChatList/ChatList";
 import Profile from "./components/Profile/Profile";
+import ChatList from "./components/ChatList/ChatList";
+import MessageComponent  from "./components/Message/Message";
+import './App.css';
 
 const Routes = () => {
     return(
@@ -17,13 +19,18 @@ const Routes = () => {
 
             <Switch>
                 <Route exact path = "/" >
-                    <ChatList />
+                    <div className = "Route">
+                        <ChatList />
+                    </div>
                 </Route>
 
                 <Route path = "/profile" component = {Profile} />
 
                 <Route exact path = "/chats/:chatId" >
-                    <ChatList />
+                    <div className = "Route">
+                        <ChatList className = "chatList" />
+                        <MessageComponent />
+                    </div>
                 </Route>
 
                 <Route path="*">

@@ -18,7 +18,7 @@ const chatList =[
 
 const ChatList = () => {
     return (
-        <ul>
+        <ul className = "chatList">
             {chatList.map((chat) =>(
                 <li key = {chat.id}>
                     <Link to = {`/chats/${chat.id}`}>{chat.name}</Link>
