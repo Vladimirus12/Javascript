@@ -1,0 +1,81 @@
+.App-modal {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0 .2);
+    backdrop-filter: blur(8px);
+}
+
+.App-modal.open {
+    height: 100%;
+    display: block;
+}
+
+.App-modal.close {
+    height: 0;
+    display: none;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 100%;
+    margin: auto;
+    background: rgba(255,255,255 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
+    margin-top: 5%;
+
+/*    margin-bottom: 10%; */
+
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.modal-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*.modal-text {
+    overflow-y: scroll;
+}*/
+
+.modal-content:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.modal-close {
+    text-align: right;
+    color: #FF0d00;
+    margin-top: -15px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.App-subTitle {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+}
+
+.App-p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #D8D9DB;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.stripe {
+    background: rgba(255,255,255 0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
